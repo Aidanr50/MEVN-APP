@@ -1,0 +1,2 @@
+- Handle collection creation and schemas for those collections
+    - Refer to this post that highlights a reasonable collection/schema arrangement (https://www.mongodb.com/community/forums/t/what-is-the-best-schema-design-for-a-movie-review-app-for-storing-reviews-likes-comments-etc/182889/2)
