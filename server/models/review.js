@@ -3,9 +3,24 @@ const mongoose = require('mongoose')
 const reviewSchema = new mongoose.Schema({
     rating: Number,
     overview: String,
-    practicality: String,
-    interior: String,
-    driving: String,
+    practicality: [
+        {
+            rating: Number,
+            text: String
+        }
+    ],
+    interior: [
+        {
+            rating: Number,
+            text: String
+        }
+    ],
+    driving: [
+        {
+            rating: Number,
+            text: String
+        }
+    ],
     images: [
         {
             url: String,

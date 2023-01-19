@@ -16,6 +16,10 @@ const reviews = require('./routes/API/reviews')
 
 app.use('/api/reviews', reviews)
 
+app.get('/', (req, res) => {
+    res.send("Hello")
+})
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server listening on ${port}`))
