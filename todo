@@ -6,3 +6,4 @@
     - Pull posts from API route @done
     - Create reviews component w/stylized representation of data
     - Continue with following hamburger tut: https://larainfo.com/blogs/vue-3-responsive-navbar-menu-with-tailwind-css-example
+    - Look into Tailwind animation for hamburger
