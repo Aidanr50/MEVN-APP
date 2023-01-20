@@ -16,6 +16,7 @@ router.get('/', async (req, res) => {
 
     const reviews = await Review.find()
 
+    console.log("request received")
     res.send(reviews)
 })
 
