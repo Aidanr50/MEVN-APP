@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import NavComponent from './components/NavComponent.vue';
-import ReviewComponent from './components/ReviewComponent.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
 import FlexContainer from './components/FlexContainer.vue';
 </script>
 
@@ -9,8 +9,8 @@ import FlexContainer from './components/FlexContainer.vue';
   <div class="container mx-auto px-2">
     <NavComponent />
     <RouterView />
+    <HeaderComponent />
     <FlexContainer />
-    <ReviewComponent />
   </div>
 
 </template>
