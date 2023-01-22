@@ -42,8 +42,14 @@ import ReviewService from '../../ReviewService';
           </div>
         </div>
         <hr class="mb-4">
-        <h3 class="font-bold text-lg">{{ review.overview.substring(0,20) }}</h3>
-        <p>{{ review.rating }}</p>
+        <div class="flex mb-2">
+          <img class="w-5 h-5" src="../assets/img/star-full.png" alt="">
+          <img class="w-5 h-5" src="../assets/img/star-full.png" alt="">
+          <img class="w-5 h-5" src="../assets/img/star-full.png" alt="">
+          <img class="w-5 h-5" src="../assets/img/star-full.png" alt="">
+          <img class="w-5 h-5" src="../assets/img/star-full.png" alt="">
+        </div>
+        <h3 class="font-bold text-lg mb-2">{{ review.overview.substring(0,20) }}</h3>
         <p>{{ review.overview }}</p>
         <p>{{ review.practicality[0].text }}</p>
         <p>{{ review.interior[0].text }}</p>
