@@ -3,24 +3,18 @@ const mongoose = require('mongoose')
 const reviewSchema = new mongoose.Schema({
     rating: Number,
     overview: String,
-    practicality: [
-        {
-            rating: Number,
-            text: String
-        }
-    ],
-    interior: [
-        {
-            rating: Number,
-            text: String
-        }
-    ],
-    driving: [
-        {
-            rating: Number,
-            text: String
-        }
-    ],
+    year: String,
+    displacement: {
+        Number,
+        min: [0.1],
+        max: [10.0]
+    },
+    fuel: {
+        String,
+        enum: ["Petrol", "Diesel", "Electric", "LPG", "Hybrid"]
+    },
+
+    vehicle: {type: mongoose.Schema.Types.ObjectId, ref: 'Vehicle'},
     images: [
         {
             url: String,
