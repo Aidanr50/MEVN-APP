@@ -9,8 +9,6 @@ import FlexContainer from './components/FlexContainer.vue';
   <div class="container mx-auto px-2">
     <NavComponent />
     <RouterView />
-    <HeaderComponent />
-    <FlexContainer />
   </div>
 
 </template>

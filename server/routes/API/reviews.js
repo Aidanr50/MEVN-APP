@@ -34,9 +34,10 @@ router.post('/', (req, res) => {
     const submission = {
         rating: body.rating,
         overview: body.overview,
-        practicality: body.practicality,
-        interior: body.interior,
-        driving: body.driving
+        year: body.year,
+        displacement: body.displacement,
+        fuel: body.fuel,
+        transmission: body.transmission
     }
 
     const newReview = Review(submission)

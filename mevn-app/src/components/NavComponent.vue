@@ -2,14 +2,17 @@
     <div class="sticky top-0 bg-off-white">
         <header class="text-gray-600 body-font">
             <div class="flex flex-wrap py-5 flex-row justify-between">
-                <router-link to="/about" class="flex title-font font-medium items-center text-gray-900">
+                <router-link to="/" class="flex title-font font-medium items-center text-gray-900">
                     <img class="hidden sm:block" src="../assets/img/AUTOTRUSTED.desktop.png" alt="">
                     <img class="block sm:hidden" src="../assets/img/AUTOTRUSTED-mobile.png" alt="">
 
                 </router-link>
                 <nav class="hidden sm:ml-auto sm:flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900">Manufacturers</a>
-                    <a class="mr-5 hover:text-gray-900">Reviews</a>
+                    <router-link to="/manufacturers" class="mr-5 hover:text-gray-900">
+                        Manufacturers
+                    </router-link>
+                    <router-link to="/reviews" class="mr-5 hover:text-gray-900">Reviews
+                    </router-link>
                 </nav>
                 <button class="hidden sm:inline-flex items-center text-white bg-brand-green border-0 py-2 px-4 focus:outline-none hover:bg-green-700 text-base sm:mt-0 md:mt-0">Sign Up
                 </button>

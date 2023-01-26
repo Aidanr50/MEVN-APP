@@ -5,15 +5,18 @@ const reviewSchema = new mongoose.Schema({
     overview: String,
     year: String,
     displacement: {
-        Number,
-        min: [0.1],
-        max: [10.0]
+        type: Number,
+        min: 0,
+        max: 10
     },
     fuel: {
-        String,
-        enum: ["Petrol", "Diesel", "Electric", "LPG", "Hybrid"]
+        type: String,
+        enum: ["Petrol", "Diesel", "Electric", "LPG", "Hybrid", "Hydrogen"]
     },
-
+    transmission: {
+        type: String,
+        enum: ["Manual", "Automatic"]
+    },
     vehicle: {type: mongoose.Schema.Types.ObjectId, ref: 'Vehicle'},
     images: [
         {

@@ -1,5 +1,5 @@
 <script>
-import ReviewService from '../../ReviewService';
+import ReviewService from '../../services/ReviewService';
 
   export default {
     name: 'ReviewComponent',
@@ -34,10 +34,10 @@ import ReviewService from '../../ReviewService';
           <div>
             <h4 class="font-bold text-md">Anita Gofradump</h4>
             <div>
-              <span class="mr-3 text-gray-500">2017</span>
-              <span class="mr-3 text-gray-500">2.0</span>
-              <span class="mr-3 text-gray-500">petrol</span>
-              <span class="mr-3 text-gray-500">automatic</span>
+              <span class="mr-3 text-gray-500">{{ review.year }}</span>
+              <span class="mr-3 text-gray-500">{{ review.displacement }}</span>
+              <span class="mr-3 text-gray-500">{{ review.fuel }}</span>
+              <span class="mr-3 text-gray-500">{{ review.transmission }}</span>
             </div>
           </div>
         </div>
@@ -51,9 +51,6 @@ import ReviewService from '../../ReviewService';
         </div>
         <h3 class="font-bold text-lg mb-2">{{ review.overview.substring(0,20) }}</h3>
         <p>{{ review.overview }}</p>
-        <p>{{ review.practicality[0].text }}</p>
-        <p>{{ review.interior[0].text }}</p>
-        <p>{{ review.driving[0].text }}</p>
       </div>
 
 </template>

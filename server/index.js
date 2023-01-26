@@ -13,8 +13,10 @@ app.use(cors())
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const reviews = require('./routes/API/reviews')
+const manufacturers = require('./routes/API/manufacturers')
 
 app.use('/api/reviews', reviews)
+app.use('/api/manufacturers', manufacturers)
 
 app.get('/', (req, res) => {
     res.send("Hello")
