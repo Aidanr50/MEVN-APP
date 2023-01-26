@@ -30,7 +30,9 @@ import ManufacturersService from '../../services/ManufacturersServices';
       v-bind:key="manufacturer._id"
       >
         <h2>{{ manufacturer.name }}</h2>
-        <!-- <img :src="require(`../assets/img/brands/Abarth.svg`)" alt=""> -->
+
+        <!-- BELOW SRC INTERPOLATION IS BUSTED -->
+        <!-- <img v-bind:src="require(`../assets/img/brands/${manufacturer.name}.svg`)" alt=""> -->
         <!-- <img :src="require(`../assets/img/brands/AC.svg`)"> -->
       </div>
 

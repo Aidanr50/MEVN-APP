@@ -23,14 +23,23 @@ router.post('/', (req, res) => {
 
     let body = req.body
 
-    for(let i = 0; i < body.length; i++) {
-        let obj = body[i];
-
-        console.log(obj)
-
-        const newManufacturer = Manufacturer(obj)
-        newManufacturer.save()
+    const submission = {
+        name: body.name
     }
+
+    const newManufacturer = Manufacturer(submission)
+    newManufacturer.save()
+
+    // USE BELOW FOR UPLOADING A JSON LIST
+
+    // for(let i = 0; i < body.length; i++) {
+    //     let obj = body[i];
+
+    //     console.log(obj)
+
+    //     const newManufacturer = Manufacturer(obj)
+    //     newManufacturer.save()
+    // }
 
     // console.log(body)
 
