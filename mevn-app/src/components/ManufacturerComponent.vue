@@ -32,10 +32,9 @@ import ManufacturersService from '../../services/ManufacturersServices';
         <h2>{{ manufacturer.name }}</h2>
 
         <!-- BELOW SRC INTERPOLATION IS BUSTED -->
-        <!-- <img v-bind:src="require(`../assets/img/brands/${manufacturer.name}.svg`)" alt=""> -->
+        <img v-bind:src="require(`../assets/img/brands/${manufacturer.name}.svg`)" alt="">
         <!-- <img :src="require(`../assets/img/brands/AC.svg`)"> -->
       </div>
-
 </template>
 
 <style scoped>
