@@ -7,16 +7,4 @@
     - Create reviews component w/stylized representation of data
     - Continue with following hamburger tut: https://larainfo.com/blogs/vue-3-responsive-navbar-menu-with-tailwind-css-example
     - Look into Tailwind animation for hamburger
-- Google Fonts from MEVN APP (Tailwind config should be setup already)
-- Continue porting over component code from MEVN
-- Reviews
-    - Allow users to add images
-        - Store to server and reference location in DB (Cloudinary, S3, Imagekit?)
-        - Perform optimisation that reduces overall image size on upload
-    - Calculate average star rating by parsing all reviews and rendering to 
-- AI Summaries
-    - Use AI API to create summaries of vehicles based on aggregated review data. Serve these summaries as "What users are saying" (Potentially at vehicle level or trim level)
-        - Find way to cache these summaries and generate periodically rather than on every server request (i.e once a month summarize info from what users are saying about Audi S3)
-    - Potentially use AI to aggregate data from multiple sources (Youtube, forums etc.)
-    - Add tab with scraped Youtube content containine "X vehicle review"
 
